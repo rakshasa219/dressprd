@@ -92,7 +92,8 @@
 ##  <h3 id="chapter14">产品原型展示</h3>
 - [原型展示页](http://127.0.0.1:32767/13.12.31/%E5%B0%81%E9%9D%A2.html)
 **首页模块**
-![首页](https://upload-images.jianshu.io/upload_images/11043489-f2adc1be2c9ac179.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![首页展示](https://upload-images.jianshu.io/upload_images/11043489-262cb71b4d07970a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 **常规记账模块**
 ![常规记账方式](https://upload-images.jianshu.io/upload_images/11043489-28ed16032b9c943f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 **拍照记账模块**
