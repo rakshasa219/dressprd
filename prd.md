@@ -6,22 +6,21 @@
  |  领头的设计师 | 陈彦华 |
  |  领头的开发者 | 陈彦华 |
  |  领头的测试者 | 陈彦华  |
-
-|目录-1|目录-2
-|-|-|
-|[市场背景](#chapter1) |-|
-|[核心价值](#chapter3) |-|
-|[加值宣言](#chapter5) |-|
-|[目的](#chapter4) |-|
-|[产品背景](#chapter2) |-|
-|[产品目标](#chapter6) |-|
+### 目录
+|1|2|
+|:-:|:-:|
+|[市场背景](#chapter1) |[产品架构图](#chapter12)|
+|[核心价值](#chapter3) |[功能流程图](#chapter13)|
+|[加值宣言](#chapter5) |[原型展示](#chapter14)|
+|[目的](#chapter4) |[API检测](#chapter15)|
+|[产品背景](#chapter2) |[使用对比分析](#chapter16)|
+|[产品目标](#chapter6) |[API使用风险评估](#chapter17)|
 |[目标用户](#chapter7) |-|
 |[用户痛点](#chapter10) |-|
 |[用户需求](#chapter8) |-|
 |[场景假设](#chapter9) |-|
 |[人工智能出错率与解决方法](#chapter11) |-|
-|[人工智能出错率与解决方法](#chapter12)||
-|[PRD5-需求列表与人工智能API加值](#chapter13)||
+
 ## <h3 id="chapter1">市场背景： </h3>
 - 经过调查，发现市面上受欢迎程度较高的记账app比如“口袋记账”、“鲨鱼记账”、“Timi记账”、“挖财记账理财”、“随手记”等专业记账app页面精致功能分类完整但无一不例外需要进行手动记账；同时调查发现各app软件商店评价均居于前位的“网易有钱”虽然实现了最少化手动记账，采取关联所有线上支付平台进行自动记账，但对于线下交易仍旧需要手动输入记账；基于现状，现将采用百度语音识别技术以及文字识别技术以及讯飞自然语言处理技术实现一张图片或一句话解决日常记账需求。
 ## <h3 id="chapter2">产品背景： </h3>
@@ -86,6 +85,25 @@
 - app提醒用户控制以下环境/自我变量的情况下再次进行识别：
 语音识别差错：适当的音量/平稳的语速/安静的环境/
 票据识别差错：适当的光线/开启相机防手抖模式/
+##  <h3 id="chapter12">产品架构图</h3>
+![产品架构](https://upload-images.jianshu.io/upload_images/11043489-b2fd304a678ff25a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+##  <h3 id="chapter13">功能流程图</h3>
+![功能流程](https://upload-images.jianshu.io/upload_images/11043489-cb2384f1f346bad9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+##  <h3 id="chapter14">产品原型展示</h3>
+- [原型展示页](http://127.0.0.1:32767/13.12.31/%E5%B0%81%E9%9D%A2.html)
+**首页模块**
+![首页](https://upload-images.jianshu.io/upload_images/11043489-f2adc1be2c9ac179.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+**常规记账模块**
+![常规记账方式](https://upload-images.jianshu.io/upload_images/11043489-28ed16032b9c943f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+**拍照记账模块**
+![图片记账授权](https://upload-images.jianshu.io/upload_images/11043489-f3f1045dd8008883.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片记账方式](https://upload-images.jianshu.io/upload_images/11043489-99969bb107a15296.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+**语音记账模块**
+![语音记账方式](https://upload-images.jianshu.io/upload_images/11043489-4a81015b6729ade4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+## <h3 id="chapter15">API检测 </h3>
+## <h3 id="chapter16">使用对比分析 </h3>
+## <h3 id="chapter17">API使用风险评估</h3>
+
 ---**以下还在进行**---
 ## （九）使用者交互与设计（axure产品原型）
 ### [原型文档下载区]()
