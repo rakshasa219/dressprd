@@ -1,4 +1,4 @@
- |  发布日期 | 2019-12-01 |
+|  发布日期 | 2019-12-01 |
  | -- | -- |
  |  app名称 | 轻账本 |
  |  文件现状 | 进行中 |
@@ -14,7 +14,7 @@
 |[加值宣言](#chapter5) |[原型展示](#chapter14)|
 |[目的](#chapter4) |[API检测](#chapter15)|
 |[产品背景](#chapter2) |[使用对比分析](#chapter16)|
-|[产品目标](#chapter6) |[API使用风险评估](#chapter17)|
+|[产品目标](#chapter6) |[使用风险报告](#chapter17)|
 |[目标用户](#chapter7) |-|
 |[用户痛点](#chapter10) |-|
 |[用户需求](#chapter8) |-|
@@ -33,11 +33,11 @@
 做一个让无需“动手”的记账app——轻账本
 
 ##  <h3 id="chapter5">加值宣言：</h3>
-- **百度开发平台的短语音识别api的价值:**
+- **百度开发平台的短语音识别api的加值:**
 > 将60秒以内的语音精准识别为文字。
-- **讯飞平台NPL关键词提取api的价值：**
+- **讯飞平台NPL关键词提取api的加值：**
 > 把文本中包含的信息进行结构化处理，并将提取的信息以统一形式集成在一起。
-- **百度开发平台的票据文字识别api的价值：**
+- **百度开发平台的票据文字识别api的加值：**
 
 |api名称|api加值宣言|是否为当前目标|
 |:---:|:---:|:---:|
@@ -51,21 +51,26 @@
 
 ##  <h3 id="chapter6">产品目标：</h3>
 **前期目标**：
-- **拍下票据，app自动识别金额和消费内容并进行分类加入账本。**
+- **拍下购物票据，app自动识别金额和消费内容并进行分类加入账本。**
 - **说出今天的消费行程，app自定识别金额和消费内容并进行分类加入账本。**
 - 拍下火车票/出租车票据，app自动识别金额和消费内容并进行分类加入账本。
-- *app自动储存用户拍摄票据以及语音以协助用户进行对账。*
+- *app自动储存用户拍摄票据以及语音识别结果作为账目备注以协助用户进行对账。*
+- *每日记账提醒*
 
-**后期目标**：（目前不做）
+**后期目标**：（目前不做，后续考虑加入专业版轻账本）
 - 拍下增值税发票，app自动识别银行账户和金额以及消费内容并进行分类加入账本。
-- 拍下定额发票，app自动识别银行账户和金额以及消费内容并进行分类加入账本。
--
+- 拍下发票，app自动识别银行账户和金额以及消费内容并进行分类加入账本。
+-拍下银行回单，app自动识别银行账户和金额以及消费内容并进行分类加入账本。
+
 ##  <h3 id="chapter7">目标用户：</h3>
 学生党、购物狂、白领、月光族、理财小白、懒惰人群
 ##  <h3 id="chapter10">用户痛点：</h3>
-- 面对众多票据，不知哪些是重要的哪些可以丢弃。
 - 想要记账学会理财，对于繁琐的记账流程感到烦躁。
-
+- 线下交易/现金交易记账流程繁琐。
+- 工作/学习繁忙，无法抽出多余时间细致记账。
+- 积攒太多票据，分类整理难度大。
+- 对记过的账目仅看金额和分类无法记起自己支出/收入的具体物品/事件。
+- 支出/收入后总是健忘于应该及时记账。
 ##  <h3 id="chapter8">用户需求:（使用的人工智能要反映到需求列表中）</h3>
 | 用户案例	| 对应标题	| 重要程度 |
 | :--: | :--: | :--: |
@@ -76,43 +81,60 @@
 ##  <h3 id="chapter9">场景假设:</h3>
 1. 经过一番疯狂的购物狂欢，小红苦恼自己到底花了多少钱，面对一堆票据无从下手，她发现了轻账本，点开app，将票据一一拍摄上传，app自动识别了小红购买的所有产品类别以及数额，将识别出来的信息自动整理成了账本。
 2. 小红正准备入睡，突然想起今天在路上随手花了80块钱现金买花忘记记账，没有票据也没有线上支付记录，又懒得进行手动记账，她点开轻账本app，长按语音记账，“今天在街边花了80块钱买了一束花”，app将她的话识别成了文字并抽取重要信息进行分类并记账。
-##  <h3 id="chapter11">人工智能出错率与解决方法:</h3>
+##  <h3 id="chapter11">人工智能概率性与解决方法:</h3>
 ##### **概率性问题**：
-- 百度在2017年宣布己方平台语音识别技术在“安静条件下”准确率以达到97%，在今年（2019年），百度宣布近场中文普通话识别准确率达98%，也就是出错率在2%左右。
-- 百度票据识别技术针对各类票据特定的字体、打印样式进行优化，综合场景下字段准确率高达98%，其中增值税发票、出租车票四要素准确率高达99.9%，出错率在2%~0.01%。
+- 百度在2017年宣布己方平台语音识别技术在“安静条件下”准确率以达到97%，在今年（2019年），百度宣布近场中文普通话识别准确率达98%，也就是出错率在2%左右。百度票据识别技术针对各类票据特定的字体、打印样式进行优化，综合场景下字段准确率高达98%，其中增值税发票、出租车票四要素准确率高达99.9%，出错率在2%~0.01%。
+- 依据上述展示的概率性，app如出现概率性出错对用户体验的负面影响并不会压过正面影响，为此app对于概率性出错也提供以下解决方法。
 ##### 解决方法
 - app可提供修改功能进行手动修改识别差错的文字/数字。
 - app提醒用户控制以下环境/自我变量的情况下再次进行识别：
 语音识别差错：适当的音量/平稳的语速/安静的环境/
 票据识别差错：适当的光线/开启相机防手抖模式/
-##  <h3 id="chapter12">产品架构图</h3>
-![产品架构](https://upload-images.jianshu.io/upload_images/11043489-b2fd304a678ff25a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+##  <h3 id="chapter12">功能架构图</h3>
+![功能架构.png](https://upload-images.jianshu.io/upload_images/11043489-29dca8a3aac24d25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+##  <h3 id="chapter20">信息架构图</h3>
+![信息架构.png](https://upload-images.jianshu.io/upload_images/11043489-e35004021b26d949.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ##  <h3 id="chapter13">功能流程图</h3>
 ![功能流程](https://upload-images.jianshu.io/upload_images/11043489-cb2384f1f346bad9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ##  <h3 id="chapter14">产品原型展示</h3>
 - [原型展示页](http://127.0.0.1:32767/13.12.31/%E5%B0%81%E9%9D%A2.html)
 **首页模块**
-![首页展示](https://upload-images.jianshu.io/upload_images/11043489-262cb71b4d07970a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![首页](https://upload-images.jianshu.io/upload_images/11043489-a6df514d67009cc6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 **常规记账模块**
-![常规记账方式](https://upload-images.jianshu.io/upload_images/11043489-28ed16032b9c943f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![常规记账.png](https://upload-images.jianshu.io/upload_images/11043489-3d8b7783af08ab2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 **拍照记账模块**
-![图片记账授权](https://upload-images.jianshu.io/upload_images/11043489-f3f1045dd8008883.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![图片记账方式](https://upload-images.jianshu.io/upload_images/11043489-99969bb107a15296.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片授权.png](https://upload-images.jianshu.io/upload_images/11043489-3e02e2e2a341d0a3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图库导入.png](https://upload-images.jianshu.io/upload_images/11043489-aa2565ed23b7cb24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![拍照导入.png](https://upload-images.jianshu.io/upload_images/11043489-c7d2dd1f325685fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 **语音记账模块**
-![语音记账方式](https://upload-images.jianshu.io/upload_images/11043489-4a81015b6729ade4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![语音.png](https://upload-images.jianshu.io/upload_images/11043489-707d7160bd25b5f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+**其他页面原型（个人中心/统计）**
+![个人中心.png](https://upload-images.jianshu.io/upload_images/11043489-ac49dd1d810ab3fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![统计.png](https://upload-images.jianshu.io/upload_images/11043489-b18c26efecd36631.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ## <h3 id="chapter15">API检测 </h3>
-## <h3 id="chapter16">使用对比分析 </h3>
-## <h3 id="chapter17">API使用风险评估</h3>
 
----**以下还在进行**---
-## （九）使用者交互与设计（axure产品原型）
-### [原型文档下载区]()
-## [原型文档交互展示]()
-
-##（十）功能结构图
-
-## （十一）API的运用：
+###### 百度开发平台通用票据api测试
+【输入图片】
+![微信图片_20191223235443.jpg](https://upload-images.jianshu.io/upload_images/11043489-de2a432e24cf5926.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+###### **输入代码**
+``` 
+from aip import AipOcr
+APP_ID = '18093616'
+API_KEY = 'mA1kFgYjS4iToYQ7Xt4C5T44'
+SECRET_KEY = 'Cgy2XqwVoZXkXjYKuIBhPdyA2CeazK9M'
+client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+def get_file_content(filePath):
+    with open(filePath, 'rb') as fp:
+        return fp.read()
+image = get_file_content('test1.jpg')
+client.receipt(image);
+options = {}
+options["recognize_granularity"] = "big"
+options["probability"] = "flase"
+options["accuracy"] = "normal"
+options["detect_direction"] = "true"
+client.receipt(image, options)
+``` 
 ###### **返回结果**
 ``` {'log_id': 3909369693688673272,
  'direction': 0,
@@ -129,29 +151,110 @@
   {'location': {'width': 536, 'top': 483, 'left': 423, 'height': 54},
    'words': '0.0977.006.90'},
   {'location': {'width': 59, 'top': 487, 'left': 137, 'height': 251},
-   'words': '瘦去鱿豆'},
+   'words': '瘦肉'},
   {'location': {'width': 67, 'top': 488, 'left': 186, 'height': 246},
-   'words': '肉皮鱼干'},
+   'words': '去皮莴笋'},
   {'location': {'width': 668, 'top': 542, 'left': 294, 'height': 59},
-   'words': '笋0.2115.003.20'},
+   'words': '鱿鱼筒'},
   {'location': {'width': 547, 'top': 604, 'left': 422, 'height': 57},
-   'words': '0.139.803.90'},
+   'words': '豆干'},
   {'location': {'width': 549, 'top': 669, 'left': 421, 'height': 57},
-   'words': '0.1220.002.40'},
-  {'location': {'width': 633, 'top': 800, 'left': 131, 'height': 63},
    'words': '件数:0.52金额:16.40元'},
   {'location': {'width': 439, 'top': 866, 'left': 126, 'height': 64},
    'words': '现金:16.40元'},
   {'location': {'width': 343, 'top': 929, 'left': 133, 'height': 65},
    'words': '找回:0元'}]}
 ```
-## （十二）AI产品概率性：
+###### 百度开发平台短语音识别api测试
+###### **输入代码**
+```
+from aip import AipSpeech
+APP_ID = '17600780'
+API_KEY = 'yc1eYs5w52h2z2XVdS0Cao7U'
+SECRET_KEY = 'G4Qlb8rnqKY59a5hiKEabP7pLGqbT53k'
+client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
+def get_file_content(filePath):
+    with open(filePath, 'rb') as fp:
+        return fp.read()
+client.asr(get_file_content('语音输入.wav'), 'wav', 16000, {
+    'dev_pid': 1537,
+})
+```
+###### **返回结果**
+```
+{'corpus_no': '6773686081753621920',
+ 'err_msg': 'success.',
+ 'err_no': 0,
+ 'result': ['今天买了一打啤酒花了，36块钱。嗯。'],
+ 'sn': '275918911841577121689'}
+```
+###### 讯飞开发平台关键词提取api测试
+###### **输入代码**
+```
+# -*- coding: UTF-8 -*-
+import time
+import urllib.request
+import urllib.parse
+import json
+import hashlib
+import base64
+url ="http://ltpapi.xfyun.cn/v1/ke"
+x_appid = "5dfd94cc"
+api_key = "7dd7c436b4698f8d1914eceee82e23bf"
+#语言文本
+TEXT="今天买了一打啤酒花了36块钱。"
+def main():
+    body = urllib.parse.urlencode({'text': TEXT}).encode('utf-8')
+    param = {"type": "dependent"}
+    x_param = base64.b64encode(json.dumps(param).replace(' ', '').encode('utf-8'))
+    x_time = str(int(time.time()))
+    x_checksum = hashlib.md5(api_key.encode('utf-8') + str(x_time).encode('utf-8') + x_param).hexdigest()
+    x_header = {'X-Appid': x_appid,
+                'X-CurTime': x_time,
+                'X-Param': x_param,
+                'X-CheckSum': x_checksum}
+    req = urllib.request.Request(url, body, x_header)
+    result = urllib.request.urlopen(req)
+    result = result.read()
+    print(result.decode('utf-8'))
+    return
+if __name__ == '__main__':
+    main()
+```
+###### **返回结果**
+```
+{
+	    "code": "0",
+	    "data": {
+	        "ke": [
+	            {
+	                "score": "0.680",
+	                "word": "啤酒
+	            },
+	            {
+	                "score": "0.525",
+	                "word": "今天"
+	            },
+	            {
+	                "score": "0.500",
+	                "word": "36"
+	            },
+	  
+	        ]
+	    },
+	    "desc": "success",
+	    "sid": "ltp00000001@dx4a810f1a863f000100"
+```
+## <h3 id="chapter16">使用对比分析 </h3>
+**价格对比**
+| 开发平台	| api名称	| 价格 /免费额度
+| :--: | :--: | :--: |
+| 百度云	|短语音识别| ![](https://upload-images.jianshu.io/upload_images/11043489-c8ed1f5a68ea90d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![](https://upload-images.jianshu.io/upload_images/11043489-fdc56f3762fa0583.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|
+| 腾讯云|一句话识别| ![](https://upload-images.jianshu.io/upload_images/11043489-81e267283d79a69f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![](https://upload-images.jianshu.io/upload_images/11043489-3bac40e448aeda1f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+|
+| 阿里云 |一句话识别| ![](https://upload-images.jianshu.io/upload_images/11043489-badb201b4d27dc23.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![](https://upload-images.jianshu.io/upload_images/11043489-15122607a8a7c5dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+| 讯飞开发平台|语音转写| ![](https://upload-images.jianshu.io/upload_images/11043489-3c4e9ec2dd9091bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![](https://upload-images.jianshu.io/upload_images/11043489-154a41e6d713bb37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## (十三)API使用风险评估
-
-## 产品的可行性:
-## 交互需求：
-## 异常流：
-## 非功能性需求：
-## 结果预期：
- ## 清单
+ |
+- 仅从语音api价格方面分析，
+## <h3 id="chapter17">使用风险报告 </h3>
