@@ -113,7 +113,38 @@
 ##（十）功能结构图
 
 ## （十一）API的运用：
-
+###### **返回结果**
+``` {'log_id': 3909369693688673272,
+ 'direction': 0,
+ 'words_result_num': 12,
+ 'words_result': [{'location': {'width': 461,
+    'top': 189,
+    'left': 160,
+    'height': 52},
+   'words': '2019/12/2318:02:02'},
+  {'location': {'width': 763, 'top': 247, 'left': 155, 'height': 59},
+   'words': '收银员:123机号:53单号:10901'},
+  {'location': {'width': 752, 'top': 366, 'left': 148, 'height': 61},
+   'words': '商品名称数量单价金额'},
+  {'location': {'width': 536, 'top': 483, 'left': 423, 'height': 54},
+   'words': '0.0977.006.90'},
+  {'location': {'width': 59, 'top': 487, 'left': 137, 'height': 251},
+   'words': '瘦去鱿豆'},
+  {'location': {'width': 67, 'top': 488, 'left': 186, 'height': 246},
+   'words': '肉皮鱼干'},
+  {'location': {'width': 668, 'top': 542, 'left': 294, 'height': 59},
+   'words': '笋0.2115.003.20'},
+  {'location': {'width': 547, 'top': 604, 'left': 422, 'height': 57},
+   'words': '0.139.803.90'},
+  {'location': {'width': 549, 'top': 669, 'left': 421, 'height': 57},
+   'words': '0.1220.002.40'},
+  {'location': {'width': 633, 'top': 800, 'left': 131, 'height': 63},
+   'words': '件数:0.52金额:16.40元'},
+  {'location': {'width': 439, 'top': 866, 'left': 126, 'height': 64},
+   'words': '现金:16.40元'},
+  {'location': {'width': 343, 'top': 929, 'left': 133, 'height': 65},
+   'words': '找回:0元'}]}
+```
 ## （十二）AI产品概率性：
 
 ## (十三)API使用风险评估
