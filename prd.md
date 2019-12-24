@@ -94,7 +94,7 @@
 ##  <h3 id="chapter13">功能流程图</h3>
 ![功能流程](https://upload-images.jianshu.io/upload_images/11043489-cb2384f1f346bad9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ##  <h3 id="chapter14">产品原型展示</h3>
-- [原型展示页](http://127.0.0.1:32767/13.12.31/%E5%B0%81%E9%9D%A2.html)
+- [原型展示页](http://nfunm171043007.gitee.io/apiiii)
 **首页模块**
 ![首页](https://upload-images.jianshu.io/upload_images/11043489-a6df514d67009cc6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 **常规记账模块**
@@ -317,6 +317,7 @@ if __name__ == '__main__':
 - 综上所示，我选择了腾讯api作为我的app语音识别api调用平台。
 ---
 ## <h3 id="chapter22">清单 </h3>
-- **[原型展示页](http://127.0.0.1:32767/13.12.31/%E5%B0%81%E9%9D%A2.html)**
+- **[原型展示页](http://nfunm171043007.gitee.io/apiiii)**
+- **[原型发布github页](https://github.com/rakshasa219/apiiii)**
 - **三家平台语音api基于同一个输入源测试结果页：[点击查看](http://nfunm171043007.gitee.io/appdesignprd/)**
 - **语音文件：[“语音输入.wav”](https://gitee.com/NFUNM171043007/APP_design_final/raw/master/%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.wav)**
