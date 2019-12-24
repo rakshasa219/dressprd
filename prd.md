@@ -283,7 +283,7 @@ if __name__ == '__main__':
 
 ---
 - **三家平台语音api基于同一个输入源测试结果页：[点击查看](http://nfunm171043007.gitee.io/appdesignprd/)**
-- **语音文件：[“语音输入.wav”](https://gitee.com/NFUNM171043007/APP_design_final/raw/master/%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.wav)**
+- **语音文件：[“语音输入.wav”](https://gitee.com/NFUNM171043007/APP_design_final/raw/master/%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.wavhttps://gitee.com/NFUNM171043007/apiiii/raw/master/%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.wav)**
 - **语音内容：【今天买了一打啤酒，花了36块钱。】**
 ---
 - 从测试结果来看，可以明显发现百度语音识别api的测试结果与源文件语音内容大相径庭。![百度云语音识别测试结果](https://upload-images.jianshu.io/upload_images/11043489-b226c3b6354c7c54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -321,4 +321,4 @@ if __name__ == '__main__':
 - **[原型展示页](http://nfunm171043007.gitee.io/apiiii)**
 - **[原型发布github页](https://github.com/rakshasa219/apiiii)**
 - **三家平台语音api基于同一个输入源测试结果页：[点击查看](http://nfunm171043007.gitee.io/appdesignprd/)**
-- **语音文件：[“语音输入.wav”](https://gitee.com/NFUNM171043007/APP_design_final/raw/master/%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.wav)**
+- **语音文件：[“语音输入.wav”](https://gitee.com/NFUNM171043007/apiiii/raw/master/%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.wav)**
