@@ -109,7 +109,7 @@
 ![统计.png](https://upload-images.jianshu.io/upload_images/11043489-b18c26efecd36631.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ## <h3 id="chapter15">API检测 </h3>
 
-###### 百度开发平台通用票据api测试
+### 百度开发平台通用票据api测试
 【输入图片】
 ![微信图片_20191223235443.jpg](https://upload-images.jianshu.io/upload_images/11043489-de2a432e24cf5926.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ###### **输入代码**
@@ -161,7 +161,7 @@ client.receipt(image, options)
   {'location': {'width': 343, 'top': 929, 'left': 133, 'height': 65},
    'words': '找回:0元'}]}
 ```
-###### 腾讯云短语音识别api测试
+### 腾讯云短语音识别api测试
 ###### **输入代码**
 ```
 # -*- coding: utf-8 -*-
@@ -221,7 +221,7 @@ except TencentCloudSDKException as err:
 ```
 {"Data": {"TaskId": 607348989, "Status": 2, "StatusStr": "success", "Result": "[0:0.000,0:4.350]  今天买了一打啤酒花了，36块钱。\n", "ErrorMsg": ""}, "RequestId": "e46f00c3-c064-4c3d-a376-033ad7ae08e7"}
 ```
-###### 讯飞开发平台关键词提取api测试
+### 讯飞开发平台关键词提取api测试
 ###### **输入代码**
 ```
 # -*- coding: UTF-8 -*-
@@ -282,9 +282,9 @@ if __name__ == '__main__':
 由于针对购物小票的票据api目前只在百度开发平台有比较完整成熟的api调用，关键词抽取api也只在科大讯飞平台找到比较完整成熟的api调用，所以针对api使用做的对比仅限于语音识别api,参与测试的平台有：**腾讯云**、**百度云**、**科大讯飞**。
 
 ---
-**三家平台语音api基于同一个输入源测试结果页：[点击查看](http://nfunm171043007.gitee.io/appdesignprd/)**
-**语音文件：[“语音输入.wav”](https://gitee.com/NFUNM171043007/APP_design_final/raw/master/%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.wav)**
-**语音内容：【今天买了一打啤酒，花了36块钱。】**
+- **三家平台语音api基于同一个输入源测试结果页：[点击查看](http://nfunm171043007.gitee.io/appdesignprd/)**
+- **语音文件：[“语音输入.wav”](https://gitee.com/NFUNM171043007/APP_design_final/raw/master/%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.wav)**
+- **语音内容：【今天买了一打啤酒，花了36块钱。】**
 ---
 - 从测试结果来看，可以明显发现百度语音识别api的测试结果与源文件语音内容大相径庭。![百度云语音识别测试结果](https://upload-images.jianshu.io/upload_images/11043489-b226c3b6354c7c54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 - 讯飞语音识别针对语音基础框架可以识别出来，但对于语音断句、单字读音识别较为敏感。![讯飞语音识别测试结果](https://upload-images.jianshu.io/upload_images/11043489-b1864350810a73cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
