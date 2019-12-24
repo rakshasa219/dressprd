@@ -317,6 +317,6 @@ if __name__ == '__main__':
 - 综上所示，我选择了腾讯api作为我的app语音识别api调用平台。
 ---
 ## <h3 id="chapter22">清单 </h3>
-**[原型展示页](http://127.0.0.1:32767/13.12.31/%E5%B0%81%E9%9D%A2.html)**
-**三家平台语音api基于同一个输入源测试结果页：[点击查看](http://nfunm171043007.gitee.io/appdesignprd/)**
-**语音文件：[“语音输入.wav”](https://gitee.com/NFUNM171043007/APP_design_final/raw/master/%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.wav)**
+- **[原型展示页](http://127.0.0.1:32767/13.12.31/%E5%B0%81%E9%9D%A2.html)**
+- **三家平台语音api基于同一个输入源测试结果页：[点击查看](http://nfunm171043007.gitee.io/appdesignprd/)**
+- **语音文件：[“语音输入.wav”](https://gitee.com/NFUNM171043007/APP_design_final/raw/master/%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.wav)**
