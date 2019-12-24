@@ -1,4 +1,4 @@
- |  发布日期 | 2019-12-01 |
+  |  发布日期 | 2019-12-01 |
  | -- | -- |
  |  app名称 | 轻账本 |
  |  文件现状 | 进行中 |
@@ -28,7 +28,7 @@
 
 ##  <h3 id="chapter3">核心价值：（最小可行性产品）： </h3>
 着眼于用户的最基本需求，解决用户不想在记账上花费太多时间，又能准确全面记录日常消费资金流通情况。
- 
+
 ##  <h3 id="chapter4">目的：</h3>
 做一个让无需“动手”的记账app——轻账本
 
@@ -296,10 +296,19 @@ if __name__ == '__main__':
 ---
 ## <h3 id="chapter17">使用风险报告 </h3>
 - 语音api价格方面分析，同单位下（服务量均为100万次），价格费用**讯飞＞百度＞腾讯**
-![腾讯语音识别api价格](https://upload-images.jianshu.io/upload_images/11043489-fa9bcbd357ae787e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![百度语音价格](https://upload-images.jianshu.io/upload_images/11043489-fdcae82e5122147d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![讯飞语音api价格](https://upload-images.jianshu.io/upload_images/11043489-c461b6646d95e45b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+|平台名称|服务包量(预付费)|总价|单价/次|
+|:-:|:-:|:-:|:-:|
+|百度|100万次|3000|3元/次|
+|腾讯|100万次|1800|1.8元/次|
+|讯飞|100万次|4000|4元/次|
 - 免费额度力度方面，**百度＞讯飞＞腾讯**
-![百度免费额度](https://upload-images.jianshu.io/upload_images/11043489-0eafd92213725b43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![腾讯语音免费额度](https://upload-images.jianshu.io/upload_images/11043489-5a6d41b9aa389db2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![讯飞免费额度](https://upload-images.jianshu.io/upload_images/11043489-950f1d5f7c358d69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+|平台名称|免费包服务量|限期|
+|:-:|:-:|:-:|
+|百度|不限次|不限|
+|腾讯|1.5万次|每月|
+|讯飞|5万|90天|
 ---
 至此可以列出一个表格进行顺位排位
 |平台名称|api测试准确排名(准确到不准确)|价格排名(从低到高)|免费额度排名(力度从大到小)|总计(总计越小,性价比越高)|
@@ -309,3 +318,4 @@ if __name__ == '__main__':
 |讯飞|2|3|2|7|
 - 综上所示，我选择了腾讯api作为我的app语音识别api调用平台。
 ---
+
