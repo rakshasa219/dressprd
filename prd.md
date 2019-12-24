@@ -1,4 +1,4 @@
-|  发布日期 | 2019-12-01 |
+ |  发布日期 | 2019-12-01 |
  | -- | -- |
  |  app名称 | 轻账本 |
  |  文件现状 | 进行中 |
@@ -10,12 +10,12 @@
 |1|2|
 |:-:|:-:|
 |[市场背景](#chapter1) |[产品架构图](#chapter12)|
-|[核心价值](#chapter3) |[功能流程图](#chapter13)|
-|[加值宣言](#chapter5) |[原型展示](#chapter14)|
-|[目的](#chapter4) |[API检测](#chapter15)|
-|[产品背景](#chapter2) |[使用对比分析](#chapter16)|
-|[产品目标](#chapter6) |[使用风险报告](#chapter17)|
-|[目标用户](#chapter7) |-|
+|[核心价值](#chapter3) |[信息架构图](#chapter20)|
+|[加值宣言](#chapter5) |[功能流程图](#chapter13)|
+|[目的](#chapter4) |[原型展示](#chapter14)|
+|[产品背景](#chapter2) |[API检测](#chapter15)|
+|[产品目标](#chapter6) |[使用对比分析](#chapter16)|
+|[目标用户](#chapter7) |[使用风险报告](#chapter17)|
 |[用户痛点](#chapter10) |-|
 |[用户需求](#chapter8) |-|
 |[场景假设](#chapter9) |-|
@@ -42,8 +42,8 @@
 |api名称|api加值宣言|是否为当前目标|
 |:---:|:---:|:---:|
 |**通用票据识别api**|针对票据字体做了专项优化的通用文字识别版本，支持对医疗票据、银行兑票、购物小票等各类票据的票面内容进行识别|√|
-|**火车票识别api**|持对红、蓝火车票的8个关键字段进行结构化识别，包括车票号码、始发站、目的站、车次、日期、票价、席别、姓名|√|
-|**出租车票识别api**|识别全国各大城市出租车票的6个关键字段，包括发票号码、代码、车号、日期、时间、金额|√|
+|**火车票识别api**|持对红、蓝火车票的8个关键字段进行结构化识别，包括车票号码、始发站、目的站、车次、日期、票价、席别、姓名|/|
+|**出租车票识别api**|识别全国各大城市出租车票的6个关键字段，包括发票号码、代码、车号、日期、时间、金额|/|
 | *银行回单识别api*|对各大银行的收付款回单关键字段进行结构化识别，包括：收/付款人户名、账号、开户银行、交易日期、大小写金额、流水号|/|
 |*增值税发票识别api*|对增值税普票或专票所有30个字段进行结构化识别，包括发票基本信息、销售方及购买方信息、商品信息、价税信息|/|
 | *定额发票识别api*|对各类定额发票的发票代码、发票号码、金额3个关键字段进行结构化识别|/|
@@ -51,13 +51,13 @@
 
 ##  <h3 id="chapter6">产品目标：</h3>
 **前期目标**：
-- **拍下购物票据，app自动识别金额和消费内容并进行分类加入账本。**
-- **说出今天的消费行程，app自定识别金额和消费内容并进行分类加入账本。**
-- 拍下火车票/出租车票据，app自动识别金额和消费内容并进行分类加入账本。
+- **拍下购物票据，app自动识别金额和消费内容并抽取关键词加入账本。**
+- **说出今天的消费行程，app自定识别金额和消费内容并抽取关键词加入账本。**
 - *app自动储存用户拍摄票据以及语音识别结果作为账目备注以协助用户进行对账。*
 - *每日记账提醒*
 
 **后期目标**：（目前不做，后续考虑加入专业版轻账本）
+- 拍下火车票/出租车票据，app自动识别金额和消费内容并进行分类加入账本。
 - 拍下增值税发票，app自动识别银行账户和金额以及消费内容并进行分类加入账本。
 - 拍下发票，app自动识别银行账户和金额以及消费内容并进行分类加入账本。
 -拍下银行回单，app自动识别银行账户和金额以及消费内容并进行分类加入账本。
@@ -68,22 +68,21 @@
 - 想要记账学会理财，对于繁琐的记账流程感到烦躁。
 - 线下交易/现金交易记账流程繁琐。
 - 工作/学习繁忙，无法抽出多余时间细致记账。
-- 积攒太多票据，分类整理难度大。
+- 积攒太多票据，整理难度大。
 - 对记过的账目仅看金额和分类无法记起自己支出/收入的具体物品/事件。
 - 支出/收入后总是健忘于应该及时记账。
 ##  <h3 id="chapter8">用户需求:（使用的人工智能要反映到需求列表中）</h3>
 | 用户案例	| 对应标题	| 重要程度 |
 | :--: | :--: | :--: |
 | 用户想拍摄票据小票获取记账信息	|[通用票据识别](https://ai.baidu.com/tech/ocr_receipts/receipt) 	| 重要 |
-| 用户想一句话进行记账	|[短语音识别](https://ai.baidu.com/tech/speech/asr);[关键词提取](https://www.xfyun.cn/services/keyword-extraction)| 重要 |
-| 用户想拍摄火车票获取记账信息 |[火车票识别](https://ai.baidu.com/tech/ocr_receipts/train_ticket) | 次重要 |
-| 用户想拍摄出租车账单获取记账信息 |[出租车票识别](https://ai.baidu.com/tech/ocr_receipts/taxi_receipt)| 次重要 |
+| 用户想用一句话进行记账	|[短语音识别](https://ai.baidu.com/tech/speech/asr);[关键词提取](https://www.xfyun.cn/services/keyword-extraction)| 重要 |
+
 ##  <h3 id="chapter9">场景假设:</h3>
 1. 经过一番疯狂的购物狂欢，小红苦恼自己到底花了多少钱，面对一堆票据无从下手，她发现了轻账本，点开app，将票据一一拍摄上传，app自动识别了小红购买的所有产品类别以及数额，将识别出来的信息自动整理成了账本。
-2. 小红正准备入睡，突然想起今天在路上随手花了80块钱现金买花忘记记账，没有票据也没有线上支付记录，又懒得进行手动记账，她点开轻账本app，长按语音记账，“今天在街边花了80块钱买了一束花”，app将她的话识别成了文字并抽取重要信息进行分类并记账。
+2. 小红正准备入睡，突然想起今天在路上随手花了80块钱现金买花忘记记账，没有票据也没有线上支付记录，又懒得进行手动记账，她点开轻账本app，长按语音记账，“今天在街边花了80块钱买了一束花”，app将她的话识别成了文字并抽取重要信息进行记账。
 ##  <h3 id="chapter11">人工智能概率性与解决方法:</h3>
 ##### **概率性问题**：
-- 百度在2017年宣布己方平台语音识别技术在“安静条件下”准确率以达到97%，在今年（2019年），百度宣布近场中文普通话识别准确率达98%，也就是出错率在2%左右。百度票据识别技术针对各类票据特定的字体、打印样式进行优化，综合场景下字段准确率高达98%，其中增值税发票、出租车票四要素准确率高达99.9%，出错率在2%~0.01%。
+- 鉴于腾讯2017年推出叮当智能助手以及人工智能“小微”均宣布语音识别准确率达97%，出错率在3%左右。百度票据识别技术针对各类票据特定的字体、打印样式进行优化，综合场景下字段准确率高达98%，其中增值税发票、出租车票四要素准确率高达99.9%，出错率在2%~0.01%。
 - 依据上述展示的概率性，app如出现概率性出错对用户体验的负面影响并不会压过正面影响，为此app对于概率性出错也提供以下解决方法。
 ##### 解决方法
 - app可提供修改功能进行手动修改识别差错的文字/数字。
@@ -165,28 +164,65 @@ client.receipt(image, options)
   {'location': {'width': 343, 'top': 929, 'left': 133, 'height': 65},
    'words': '找回:0元'}]}
 ```
-###### 百度开发平台短语音识别api测试
+###### 腾讯云短语音识别api测试
 ###### **输入代码**
 ```
-from aip import AipSpeech
-APP_ID = '17600780'
-API_KEY = 'yc1eYs5w52h2z2XVdS0Cao7U'
-SECRET_KEY = 'G4Qlb8rnqKY59a5hiKEabP7pLGqbT53k'
-client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
-def get_file_content(filePath):
-    with open(filePath, 'rb') as fp:
-        return fp.read()
-client.asr(get_file_content('语音输入.wav'), 'wav', 16000, {
-    'dev_pid': 1537,
-})
+# -*- coding: utf-8 -*-
+from tencentcloud.common import credential
+from tencentcloud.common.profile.client_profile import ClientProfile
+from tencentcloud.common.profile.http_profile import HttpProfile
+from tencentcloud.common.exception.tencent_cloud_sdk_exception import TencentCloudSDKException 
+from tencentcloud.asr.v20190614 import asr_client, models 
+import base64
+
+#音频 URL 方式
+try: 
+    #此处<Your SecretId><Your SecretKey>需要替换成客户自己的账号信息
+    cred = credential.Credential("AKIDpVDingzo7GG4e3afdMp57xb2EEzVmCUd", "81iCSY4WjpjTyDE1jCh2DDm7IK6yhGfq") 
+    httpProfile = HttpProfile()
+    httpProfile.endpoint = "asr.tencentcloudapi.com"
+    clientProfile = ClientProfile()
+    clientProfile.httpProfile = httpProfile
+    clientProfile.signMethod = "TC3-HMAC-SHA256"  
+    client = asr_client.AsrClient(cred, "ap-shanghai", clientProfile) 
+    req = models.CreateRecTaskRequest()
+    params = {"EngineModelType":"16k_0","ChannelNum":1,"ResTextFormat":0,"SourceType":0,"Url":"https://gitee.com/NFUNM171043007/APP_design_final/raw/master/语音输入.wav"}
+    req._deserialize(params)
+    resp = client.CreateRecTask(req) 
+    print(resp.to_json_string()) 
+    #windows 系统使用下面一行替换上面一行
+    #print(resp.to_json_string().decode('UTF-8').encode('GBK') )
+
+except TencentCloudSDKException as err: 
+    print(err)
+from tencentcloud.common import credential
+from tencentcloud.common.profile.client_profile import ClientProfile
+from tencentcloud.common.profile.http_profile import HttpProfile
+from tencentcloud.common.exception.tencent_cloud_sdk_exception import TencentCloudSDKException 
+from tencentcloud.asr.v20190614 import asr_client, models 
+try: 
+    #此处<Your SecretId><Your SecretKey>需要替换成客户自己的账号信息
+    cred = credential.Credential("AKIDpVDingzo7GG4e3afdMp57xb2EEzVmCUd", "81iCSY4WjpjTyDE1jCh2DDm7IK6yhGfq") 
+    httpProfile = HttpProfile()
+    httpProfile.endpoint = "asr.tencentcloudapi.com"
+
+    clientProfile = ClientProfile()
+    clientProfile.httpProfile = httpProfile
+    client = asr_client.AsrClient(cred, "ap-shanghai", clientProfile) 
+
+    req = models.DescribeTaskStatusRequest()
+    params = '{"TaskId":607348989}'
+    req.from_json_string(params)
+
+    resp = client.DescribeTaskStatus(req) 
+    print(resp.to_json_string()) 
+
+except TencentCloudSDKException as err: 
+    print(err) 
 ```
 ###### **返回结果**
 ```
-{'corpus_no': '6773686081753621920',
- 'err_msg': 'success.',
- 'err_no': 0,
- 'result': ['今天买了一打啤酒花了，36块钱。嗯。'],
- 'sn': '275918911841577121689'}
+{"Data": {"TaskId": 607348989, "Status": 2, "StatusStr": "success", "Result": "[0:0.000,0:4.350]  今天买了一打啤酒花了，36块钱。\n", "ErrorMsg": ""}, "RequestId": "e46f00c3-c064-4c3d-a376-033ad7ae08e7"}
 ```
 ###### 讯飞开发平台关键词提取api测试
 ###### **输入代码**
@@ -246,15 +282,30 @@ if __name__ == '__main__':
 	    "sid": "ltp00000001@dx4a810f1a863f000100"
 ```
 ## <h3 id="chapter16">使用对比分析 </h3>
-**价格对比**
-| 开发平台	| api名称	| 价格 /免费额度
-| :--: | :--: | :--: |
-| 百度云	|短语音识别| ![](https://upload-images.jianshu.io/upload_images/11043489-c8ed1f5a68ea90d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![](https://upload-images.jianshu.io/upload_images/11043489-fdc56f3762fa0583.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)|
-| 腾讯云|一句话识别| ![](https://upload-images.jianshu.io/upload_images/11043489-81e267283d79a69f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![](https://upload-images.jianshu.io/upload_images/11043489-3bac40e448aeda1f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-|
-| 阿里云 |一句话识别| ![](https://upload-images.jianshu.io/upload_images/11043489-badb201b4d27dc23.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![](https://upload-images.jianshu.io/upload_images/11043489-15122607a8a7c5dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-| 讯飞开发平台|语音转写| ![](https://upload-images.jianshu.io/upload_images/11043489-3c4e9ec2dd9091bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![](https://upload-images.jianshu.io/upload_images/11043489-154a41e6d713bb37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+由于针对购物小票的票据api目前只在百度开发平台有比较完整成熟的api调用，关键词抽取api也只在科大讯飞平台找到比较完整成熟的api调用，所以针对api使用做的对比仅限于语音识别api,参与测试的平台有：**腾讯云**、**百度云**、**科大讯飞**。
 
- |
-- 仅从语音api价格方面分析，
+---
+**三家平台语音api基于同一个输入源测试结果页：[点击查看](http://nfunm171043007.gitee.io/appdesignprd/)**
+**语音文件：[“语音输入.wav”](https://gitee.com/NFUNM171043007/APP_design_final/raw/master/%E8%AF%AD%E9%9F%B3%E8%BE%93%E5%85%A5.wav)**
+**语音内容：【今天买了一打啤酒，花了36块钱。】**
+---
+- 从测试结果来看，可以明显发现百度语音识别api的测试结果与源文件语音内容大相径庭。![百度云语音识别测试结果](https://upload-images.jianshu.io/upload_images/11043489-b226c3b6354c7c54.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+- 讯飞语音识别针对语音基础框架可以识别出来，但对于语音断句、单字读音识别较为敏感。![讯飞语音识别测试结果](https://upload-images.jianshu.io/upload_images/11043489-b1864350810a73cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+- 腾讯语音识别词语、语义、句式均识别准确，即使断句方面稍有差错，但相较于科大讯飞和百度语音识别结果，腾讯语音识别在各方面都略胜一筹。![腾讯云语音识别测试结果](https://upload-images.jianshu.io/upload_images/11043489-eb395865a1c201d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+---
 ## <h3 id="chapter17">使用风险报告 </h3>
+- 语音api价格方面分析，同单位下（服务量均为100万次），价格费用**讯飞＞百度＞腾讯**
+![腾讯语音识别api价格](https://upload-images.jianshu.io/upload_images/11043489-fa9bcbd357ae787e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![百度语音价格](https://upload-images.jianshu.io/upload_images/11043489-fdcae82e5122147d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![讯飞语音api价格](https://upload-images.jianshu.io/upload_images/11043489-c461b6646d95e45b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+- 免费额度力度方面，**百度＞讯飞＞腾讯**
+![百度免费额度](https://upload-images.jianshu.io/upload_images/11043489-0eafd92213725b43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![腾讯语音免费额度](https://upload-images.jianshu.io/upload_images/11043489-5a6d41b9aa389db2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![讯飞免费额度](https://upload-images.jianshu.io/upload_images/11043489-950f1d5f7c358d69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+---
+至此可以列出一个表格进行顺位排位
+|平台名称|api测试准确排名(准确到不准确)|价格排名(从低到高)|免费额度排名(力度从大到小)|总计(总计越小,性价比越高)|
+|:-:|:-:|:-:|:-:|:-:|
+|百度|3|2|1|6|
+|腾讯|1|1|3|5|
+|讯飞|2|3|2|7|
+- 综上所示，我选择了腾讯api作为我的app语音识别api调用平台。
+---
