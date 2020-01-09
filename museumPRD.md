@@ -53,3 +53,11 @@ AR导览--线下互动--场地AR步导
 ### 5.功能总览流程图
 ![功能总览流程图](https://images.gitee.com/uploads/images/2019/1112/204259_f3828275_1829797.png "屏幕截图.png")
 
+### 6.原型展示
+- 首页展示
+![首页](https://upload-images.jianshu.io/upload_images/11043489-c9677cf9d09b908c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+-功能展示
+![地图导航](https://upload-images.jianshu.io/upload_images/11043489-dff95617719df15b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![文物扫描](https://upload-images.jianshu.io/upload_images/11043489-54f2806fd75a3f7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
