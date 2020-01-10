@@ -53,6 +53,6 @@
 *   同学录整理    **人脸识别**对所拍摄照片与相册中过往图片中的人脸进行标签（性别、名字、心情、联系方式）。
 *   校园回归打卡 **地理围栏api**+**地标识别**当用户有幸在若干年后回到学校 打开纪念相册app，在校园内到达某个打卡点，便会自动弹出在此地所拍的照片。
 ### 原型功能展示--人脸识别
-![微信图片_20200110151451.png](https://upload-images.jianshu.io/upload_images/11043489-feeec6e725c76e70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-### 原型功能展示--地理相册
 ![微信图片_20200110151946.png](https://upload-images.jianshu.io/upload_images/11043489-2fdfab9e5f35a967.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+### 原型功能展示--地理相册
+![微信图片_20200110151451.png](https://upload-images.jianshu.io/upload_images/11043489-feeec6e725c76e70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
